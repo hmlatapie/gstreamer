@@ -1,0 +1,3 @@
+#!/bin/bash
+# enter your gstreamer pipeline here potentially outputing files to working directory
+
