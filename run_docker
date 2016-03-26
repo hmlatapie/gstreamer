@@ -1,3 +1,3 @@
 #!/bin/bash
-docker run -it --rm -v $(pwd):/root/images hmlatapie/gstreamer
+docker run --rm -v $(pwd):/root/images hmlatapie/gstreamer
 
