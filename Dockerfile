@@ -8,5 +8,8 @@ RUN apt-get install -y aptitude
 RUN cpan Data::Dumper
 
 VOLUME /root/images 
-WORKDIR /root/imaged
+WORKDIR /root/images
 
+ADD run /root/images/run
+
+CMD ["/root/images/run"]
