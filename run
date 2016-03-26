@@ -1,9 +1,10 @@
 #!/bin/bash
 
-if [ $# -ne 1 ]; then
-	echo $0: usage: ./run pipeline_file
+if [ $# -ne 2 ]; then
+	echo $0: usage: ./run containername pipeline_file
 	exit 1
 fi
 
-docker run --rm -v $(pwd):/root/images hmlatapie/gstreamer $1
-
+docker create --name $1 -v $(pwd):/root/images hmlatapie/gstreamer /root/images/$2
+docker cp $2 $1:/root/images/
+docker start $1 
