@@ -1,3 +1,9 @@
 #!/bin/bash
-# enter your gstreamer pipeline here potentially outputing files to working directory
+
+if [ $# -ne 1 ]; then
+	echo $0: usage: ./run pipeline_file
+	exit 1
+fi
+
+docker run --rm -v $(pwd):/root/images hmlatapie/gstreamer $1
 

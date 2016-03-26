@@ -10,6 +10,3 @@ RUN cpan Data::Dumper
 VOLUME /root/images 
 WORKDIR /root/images
 
-ADD run /root/images/run
-
-CMD ["/root/images/run"]

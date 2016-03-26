@@ -1,3 +1,0 @@
-#!/bin/bash
-docker run --rm -v $(pwd):/root/images hmlatapie/gstreamer
-
