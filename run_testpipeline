@@ -1,2 +1,2 @@
 #!/bin/bash
-gst-launch-1.0 -v videotestsrc ! videoconvert ! videoscale ! video/x-raw,width=640,height=480 ! videorate ! video/x-raw,framerate=1/2 ! videoconvert ! timeoverlay halignment=right valignment=top ! clockoverlay halignment=left valignment=top time-format="%Y/%m/%d %H:%M:%S" ! videoconvert ! jpegenc ! multifilesink location=snapshot-%05d.png 
+gst-launch-1.0 -v videotestsrc ! videoconvert ! videoscale ! video/x-raw,width=640,height=480 ! videorate ! video/x-raw,framerate=1/2 ! videoconvert ! timeoverlay halignment=right valignment=top ! clockoverlay halignment=left valignment=top time-format="%Y/%m/%d %H:%M:%S" ! videoconvert ! pngenc ! multifilesink location=snapshot-%05d.png 
