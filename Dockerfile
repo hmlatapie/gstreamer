@@ -7,7 +7,7 @@ RUN apt-get update && \
  	apt-get install -y aptitude && \
  	cpan Data::Dumper && \
 	apt-get install -y vim && \
-	apt-get install -y install ffmpeg	
+	apt-get install -y ffmpeg	
 
 VOLUME /root/images 
 WORKDIR /root/images
