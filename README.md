@@ -1,5 +1,5 @@
 # gstreamer
-Dockerfile for gstreamer on Ubuntu 15.10
+Dockerfile for gstreamer, ffmpeg/ffserver on Ubuntu 15.10 
 
 ##### installation
 git clone https://github.com/hmlatapie/gstreamer
